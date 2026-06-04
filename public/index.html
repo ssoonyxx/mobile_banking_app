@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Примітивний Мобільний Банкінг</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="phone-container">
+        <div class="screen">
+            <header>
+                <h2>M-Bank</h2>
+                <p id="user-name">Завантаження...</p>
+            </header>
+
+            <div class="card-widget">
+                <p class="card-label">Основна картка</p>
+                <p id="card-number" class="card-num">**** **** **** ****</p>
+                <h3 id="card-balance">0.00 ₴</h3>
+            </div>
+
+            <div class="transfer-section">
+                <h3>Швидкий переказ</h3>
+                <form id="transfer-form">
+                    <input type="text" id="receiver-card" placeholder="Номер рахунку отримувача (UA...)" required>
+                    <input type="number" id="amount" placeholder="Сума (₴)" required min="1">
+                    <button type="submit">Надіслати</button>
+                </form>
+                <p id="status-message"></p>
+            </div>
+
+            <div class="history-section">
+                <h3>Історія операцій</h3>
+                <ul id="transactions-list">
+                    </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

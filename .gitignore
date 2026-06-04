@@ -1,0 +1,1 @@
+-e "node_modules/\n.env\ndist/\nbuild/\n.DS_Store" 
